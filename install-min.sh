@@ -28,7 +28,7 @@ git clone https://github.com/toluschr/xdeb
 printf "Vamos bien \n"
 cd xdeb
 
-printf "Descargando min-browser \n \n"
+printf "Descargando min-browser \n"
 wget https://github.com/minbrowser/min/releases/download/v1.28.1/min-1.28.1-amd64.deb
 
 printf "Convirtiendo paquete \n"
@@ -40,9 +40,9 @@ sudo xbps-install -R binpkgs min-1.28.1_1
 sleep 0.5
 
 printf "Configurando \n"
-printf "Creando enlace"
-sudo ln -sf $HOME/.min/xdeb/destdir/opt/Min/min /usr/bin/
+printf "Creando enlace \n"
+sudo ln -sf /home/alyssa/.min/xdeb/destdir/opt/Min/min /usr/bin/min
 
 sleep 0.5
-printf "--------------------------"
+echo "--------------------------"
 printf "Se instalo correctamente\n"
