@@ -16,4 +16,7 @@ echo "Descomprimiendo las fuentes"
 tar xvf JetBrainsMono.tar.xz
 tar xvf NerdFontsSymbolsOnly.tar.xz
 
-echo se "instalaron correctamente"
+echo "---------------------------"
+echo "+ se instalaron correctamente +"
+echo "---------------------------"
+
