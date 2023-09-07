@@ -38,6 +38,11 @@ printf "Instalando \n"
 sudo xbps-install -R binpkgs min-1.28.1_1
 
 sleep 0.5
+
 printf "Configurando \n"
+printf "Creando enlace"
+sudo ln -sf $HOME/.min/xdeb/destdir/opt/Min/min /usr/bin/
+
 sleep 0.5
+printf "--------------------------"
 printf "Se instalo correctamente\n"
