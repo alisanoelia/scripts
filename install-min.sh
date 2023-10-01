@@ -1,5 +1,4 @@
 #!/bin/sh -e
-#
 
 if [ -d "$HOME/.min" ]; then
   sudo rm -rfv "$HOME/.min"

@@ -19,4 +19,3 @@ tar xvf NerdFontsSymbolsOnly.tar.xz
 echo "---------------------------"
 echo "+ se instalaron correctamente +"
 echo "---------------------------"
-

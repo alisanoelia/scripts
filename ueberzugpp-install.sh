@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+
 echo "Comprobando si ya tienes ueberzugpp"
 if [ -d "/root/ueberzugpp" ]; then
 	echo "Ya existe. Eliminando"
