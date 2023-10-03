@@ -7,3 +7,4 @@
 * Min Browser
 * Ytfzf
 * JetBrains Mono Nerd Font
+* Picom Animations
