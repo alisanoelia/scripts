@@ -2,7 +2,8 @@
 
 echo " "
 echo "Instalando dependencias!"
-xbps-install Vulkan-Headers
+xbps-install Vulkan-Headers \
+	cmake
 
 cd /root
 
