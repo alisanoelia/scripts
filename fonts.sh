@@ -9,8 +9,8 @@ echo "instalar fuentes"
 mkdir $HOME/.fonts
 
 cd $HOME/.fonts 
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.0/JetBrainsMono.tar.xz
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.0/NerdFontsSymbolsOnly.tar.xz
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.tar.xz
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/NerdFontsSymbolsOnly.tar.xz
 
 echo "Descomprimiendo las fuentes"
 tar xvf JetBrainsMono.tar.xz

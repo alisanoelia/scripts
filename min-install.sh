@@ -28,13 +28,13 @@ printf "Vamos bien \n"
 cd xdeb
 
 printf "Descargando min-browser \n"
-wget https://github.com/minbrowser/min/releases/download/v1.29.0/min-1.29.0-amd64.deb
+wget https://github.com/minbrowser/min/releases/download/v1.30.0/min-1.30.0-amd64.deb
 
 printf "Convirtiendo paquete \n"
-./xdeb -Sde min-1.29.0-amd64.deb
+./xdeb -Sde min-1.30.0-amd64.deb
 
 printf "Instalando \n"
-sudo xbps-install -R binpkgs min-1.29.0_1
+sudo xbps-install -R binpkgs min-1.30.0_1
 
 sleep 0.5
 
