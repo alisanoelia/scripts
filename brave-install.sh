@@ -1,7 +1,7 @@
 #!/bin/sh -e
 
-if [ -d "$HOME/.min" ]; then
-  sudo rm -rfv "$HOME/.min"
+if [ -d "$HOME/.brave" ]; then
+  sudo rm -rfv "$HOME/.brave"
   printf "Se eliminara la carpeta...\n"
 fi
 
@@ -11,15 +11,15 @@ sleep 0.5
 sudo xbps-install -y git wget xz curl
 
 # Verificar si la carpeta ya existe
-if [ -d "$HOME/.min" ]; then
+if [ -d "$HOME/.brave" ]; then
   echo "La carpeta ya existe. Se saltará la creación."
 else
   # Crear la carpeta
-  mkdir "$HOME/.min"
+  mkdir "$HOME/.brave"
   printf "La carpeta se ha creado correctamente.\n"
 fi
 
-cd "$HOME/.min" || exit
+cd "$HOME/.brave" || exit
 printf "Listo"
 printf "Clonando xdeb \n"
 
@@ -28,19 +28,17 @@ printf "Vamos bien \n"
 cd xdeb
 
 printf "Descargando min-browser \n"
-wget https://github.com/minbrowser/min/releases/download/v1.31.2/min-1.31.2-amd64.deb
+wget https://github.com/brave/brave-browser/releases/download/v1.63.169/brave-browser_1.63.169_amd64.deb
 
 printf "Convirtiendo paquete \n"
-./xdeb -Sde min-1.31.2-amd64.deb
+./xdeb -Sde brave-browser_1.63.169_amd64.deb
 
 printf "Instalando \n"
-sudo xbps-install -R binpkgs min-1.31.2_1
+sudo xbps-install -R binpkgs brave-browser-1.63.169_1
 
 sleep 0.5
 
 printf "Configurando \n"
-printf "Creando enlace \n"
-sudo ln -sf /home/alyssa/.min/xdeb/destdir/opt/Min/min /usr/bin/min
 
 sleep 0.5
 echo "--------------------------"

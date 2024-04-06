@@ -5,6 +5,7 @@
 * Fastfetch
 * Ueberzugpp
 * Min Browser
+* Brave Browser
 * Ytfzf
 * JetBrains Mono Nerd Font
 * Picom Animations
