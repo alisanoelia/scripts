@@ -9,8 +9,12 @@ echo "instalar fuentes"
 mkdir $HOME/.fonts
 
 cd $HOME/.fonts 
+i dejavu-fonts-ttf
+i fonts-roboto-ttf
+
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.tar.xz
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/NerdFontsSymbolsOnly.tar.xz
+
 
 echo "Descomprimiendo las fuentes"
 tar xvf JetBrainsMono.tar.xz
