@@ -18,7 +18,7 @@ sudo xbps-install cmake \
 	xcb-util-image-devel
 
 cd /root
-git clone https://github.com/jstkdng/ueberzugpp
+git clone --depth=1 https://github.com/jstkdng/ueberzugpp
 
 echo "Vamos bien..."
 sleep 0.5s 

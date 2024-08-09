@@ -14,7 +14,7 @@ xbps-install mpv \
 	curl
 
 cd /root/
-git clone https://github.com/pystardust/ytfzf
+git clone --depth=1 https://github.com/pystardust/ytfzf
 cd ytfzf
 make install doc
 
