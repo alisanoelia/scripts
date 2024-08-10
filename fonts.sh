@@ -23,6 +23,8 @@ tar xvf JetBrainsMono.tar.xz
 tar xvf NerdFontsSymbolsOnly.tar.xz
 tar xvf MartianMono.tar.xz
 
+fc-cache -f -v
+
 clear
 
 echo "---------------------------"
