@@ -12,7 +12,7 @@ xbps-install xcb-util-renderutil-devel \
 	meson
 
 cd /root
-git clone https://github.com/fdev31/picom
+git clone --depth 1 https://github.com/fdev31/picom
 cd picom
 
 echo " "

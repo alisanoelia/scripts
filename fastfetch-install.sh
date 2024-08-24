@@ -7,7 +7,7 @@ xbps-install Vulkan-Headers \
 
 cd /root
 
-git clone --depth=1 https://github.com/fastfetch-cli/fastfetch
+git clone --depth 1 https://github.com/fastfetch-cli/fastfetch
 
 cd fastfetch
 
