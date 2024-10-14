@@ -28,13 +28,13 @@ printf "Vamos bien \n"
 cd xdeb
 
 printf "Descargando min-browser \n"
-wget https://github.com/brave/brave-browser/releases/download/v1.69.153/brave-browser_1.69.153_amd64.deb
+wget https://github.com/brave/brave-browser/releases/download/v1.71.112/brave-browser_1.71.112_amd64.deb
 
 printf "Convirtiendo paquete \n"
-./xdeb -Sde brave-browser_1.69.153_amd64.deb
+./xdeb -Sde brave-browser_1.71.112_amd64.deb
 
 printf "Instalando \n"
-sudo xbps-install -R binpkgs brave-browser-1.69.153_1
+sudo xbps-install -R binpkgs brave-browser-1.71.112_1
 
 sleep 0.5
 
