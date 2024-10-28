@@ -30,6 +30,7 @@ cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_OPENCV=OFF ..
 cmake --build .
 
 cp -rv ueberzug /usr/bin/
+cp -rv ueberzug /usr/bin/ueberzugpp
 
 echo " "
 echo "------------------------"
