@@ -1,11 +1,13 @@
 #!/bin/sh -e
 
+VERSION="1.33.1"
+
 if [ -d "$HOME/.min" ]; then
   sudo rm -rfv "$HOME/.min"
-  printf "Se eliminara la carpeta...\n"
+  printf "Se eliminará la carpeta...\n"
 fi
 
-printf "Se instalara min-browser \n"
+printf "Se instalará min-browser \n"
 printf "Instalando dependencias... \n"
 sleep 0.5
 sudo xbps-install -y git wget xz curl
@@ -28,20 +30,20 @@ printf "Vamos bien \n"
 cd xdeb
 
 printf "Descargando min-browser \n"
-wget https://github.com/minbrowser/min/releases/download/v1.33.1/min-1.33.1-amd64.deb
+wget "https://github.com/minbrowser/min/releases/download/v${VERSION}/min-${VERSION}-amd64.deb"
 
 printf "Convirtiendo paquete \n"
-./xdeb -Sde min-1.33.1-amd64.deb
+./xdeb -Sde "min-${VERSION}-amd64.deb"
 
 printf "Instalando \n"
-sudo xbps-install -R binpkgs min-1.33.1_1
+sudo xbps-install -R binpkgs "min-${VERSION}_1"
 
 sleep 0.5
 
 printf "Configurando \n"
 printf "Creando enlace \n"
-sudo ln -sf /home/alyssa/.min/xdeb/destdir/opt/Min/min /usr/bin/min
+sudo ln -sf "$HOME/.min/xdeb/destdir/opt/Min/min" /usr/bin/min
 
 sleep 0.5
 echo "--------------------------"
-printf "Se instalo correctamente\n"
+printf "Se instaló correctamente\n"
