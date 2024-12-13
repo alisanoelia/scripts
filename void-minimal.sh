@@ -14,36 +14,27 @@ sudo xbps-install -y \
   make \
   gcc \
   git \
-  xorg-server \
   neovim \
   zsh \
   libXft-devel \
   libX11-devel \
   harfbuzz-devel \
-  xf86-video-ati \
   xf86-input-libinput \
   bspwm \
   sxhkd \
   polybar \
-  hsetroot \
-  ranger \
   sx \
   xauth \
   unzip \
   lazygit \
   lsd \
   bat \
-  bottom \
-  zellij \
   mesa-dri \
   wpa_supplicant \
   dhcpcd \
   nodejs \
   python3-pip \
   wget \
-  dmenu \
-
-sudo pip3 install flet
 
 printf "Vamos bien, ten paciencia ... \n"
 
