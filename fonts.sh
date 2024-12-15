@@ -1,11 +1,13 @@
 #!/bin/bash
 
+VERSION="v3.3.0"
+
 if [ -d "$HOME/.fonts" ]; then
     echo "La carpeta ~/.fonts ya existe. Eliminándola..."
     rm -rf "$HOME/.fonts"
 fi
 
-echo "instalar fuentes"
+printf "Instalar fuentes \n"
 mkdir $HOME/.fonts
 
 cd $HOME/.fonts 
@@ -14,19 +16,20 @@ sudo xbps-install fonts-roboto-ttf
 # sudo xbps-install noto-fonts-emoji
 sudo xbps-install wget xz
 
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.tar.xz
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/NerdFontsSymbolsOnly.tar.xz
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/MartianMono.tar.xz
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/${VERSION}/JetBrainsMono.tar.xz
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/${VERSION}/NerdFontsSymbolsOnly.tar.xz
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/${VERSION}/MartianMono.tar.xz
 
-echo "Descomprimiendo las fuentes"
+printf "Descomprimiendo las fuentes \n"
+
 tar xvf JetBrainsMono.tar.xz
 tar xvf NerdFontsSymbolsOnly.tar.xz
 tar xvf MartianMono.tar.xz
 
 fc-cache -f -v
 
-clear
-
-echo "---------------------------"
-echo "+ se instalaron correctamente +"
-echo "---------------------------"
+printf """
+-------------------------------
++ se instalaron correctamente +
+-------------------------------
+"""
