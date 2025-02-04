@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-VERSION="1.73.104"
+VERSION="1.74.51"
 
 if [ -d "$HOME/.brave" ]; then
   sudo rm -rfv "$HOME/.brave"

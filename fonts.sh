@@ -3,17 +3,17 @@
 VERSION="v3.3.0"
 
 if [ -d "$HOME/.fonts" ]; then
-    echo "La carpeta ~/.fonts ya existe. Eliminándola..."
-    rm -rf "$HOME/.fonts"
+	echo "La carpeta ~/.fonts ya existe. Eliminándola..."
+	rm -rf "$HOME/.fonts"
 fi
 
 printf "Instalar fuentes \n"
 mkdir $HOME/.fonts
 
-cd $HOME/.fonts 
+cd $HOME/.fonts
 sudo xbps-install dejavu-fonts-ttf
 sudo xbps-install fonts-roboto-ttf
-# sudo xbps-install noto-fonts-emoji
+sudo xbps-install noto-fonts-emoji
 sudo xbps-install wget xz
 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/${VERSION}/JetBrainsMono.tar.xz
