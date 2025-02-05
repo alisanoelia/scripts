@@ -12,11 +12,9 @@ printf "Instalando dependencias... \n"
 sleep 0.5
 sudo xbps-install -y git wget xz curl
 
-# Verificar si la carpeta ya existe
 if [ -d "$HOME/.min" ]; then
-  echo "La carpeta ya existe. Se saltará la creación."
+  printf "La carpeta ya existe. Se saltará la creación.\n"
 else
-  # Crear la carpeta
   mkdir "$HOME/.min"
   printf "La carpeta se ha creado correctamente.\n"
 fi
@@ -45,5 +43,5 @@ printf "Creando enlace \n"
 sudo ln -sf "$HOME/.min/xdeb/destdir/opt/Min/min" /usr/bin/min
 
 sleep 0.5
-echo "--------------------------"
+printf "--------------------------\n"
 printf "Se instaló correctamente\n"
