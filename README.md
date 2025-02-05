@@ -1,4 +1,4 @@
-# Scripts
+# scripts
 
 ### Minimal scripts for install in Void Linux
 
