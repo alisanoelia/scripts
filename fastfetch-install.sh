@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo " "
-echo "Instalando dependencias!"
+printf "\n"
+printf "Instalando dependencias!\n"
 xbps-install Vulkan-Headers \
 	cmake
 
@@ -19,8 +19,8 @@ cmake --build . --target fastfetch
 cp -rv fastfetch /usr/bin
 cd /root
 
-echo "Eliminando archivos que ya no se necesitan"
+printf "Eliminando archivos que ya no se necesitan\n"
 rm -rv fastfetch
 
-echo " "
-echo "Instalado correctamente"
+printf "\n"
+printf "Instalado correctamente\n"
