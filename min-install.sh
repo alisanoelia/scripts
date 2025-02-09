@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-VERSION="1.33.1"
+VERSION="1.34.0"
 
 if [ -d "$HOME/.min" ]; then
   sudo rm -rfv "$HOME/.min"
