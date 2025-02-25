@@ -43,5 +43,5 @@ printf "Creando enlace \n"
 sudo ln -sf "$HOME/.min/xdeb/destdir/opt/Min/min" /usr/bin/min
 
 sleep 0.5
-printf "--------------------------\n"
-printf "Se instaló correctamente\n"
+printf "-------------------------- \n"
+printf "Se instaló correctamente \n"
