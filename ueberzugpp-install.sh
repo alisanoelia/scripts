@@ -1,18 +1,18 @@
 #!/bin/bash
 
-printf "Comprobando si ya tienes ueberzugpp\n"
+printf "Comprobando si ya tienes ueberzugpp \n"
 
 if [ -d "/root/ueberzugpp" ]; then
-	printf "Ya existe. Eliminando\n"
+	printf "Ya existe. Eliminando \n"
 
 	rm -rf "/root/ueberzugpp"
 fi
 
-printf "Vas a instalar ueberzugpp\n"
+printf "Vas a instalar ueberzugpp \n"
 
 printf " \n"
 
-printf "Descargando dependencias\n"
+printf "Descargando dependencias \n"
 
 sudo xbps-install cmake \
 	libvips-devel \
@@ -25,7 +25,7 @@ sudo xbps-install cmake \
 cd /root
 git clone --depth 1 https://github.com/jstkdng/ueberzugpp
 
-printf "Vamos bien...\n"
+printf "Vamos bien... \n"
 
 sleep 0.5s 
 
@@ -38,8 +38,5 @@ cmake --build .
 cp -rv ueberzug /usr/bin/
 cp -rv ueberzug /usr/bin/ueberzugpp
 
-echo " "
-printf "------------------------\n"
-
-printf "Se instalo correctamente\n"
-
+printf " \n"
+printf "Se instalo correctamente \n"
