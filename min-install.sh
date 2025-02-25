@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-VERSION="1.34.0"
+VERSION="1.34.1"
 
 if [ -d "$HOME/.min" ]; then
   sudo rm -rfv "$HOME/.min"
@@ -43,5 +43,4 @@ printf "Creando enlace \n"
 sudo ln -sf "$HOME/.min/xdeb/destdir/opt/Min/min" /usr/bin/min
 
 sleep 0.5
-printf "-------------------------- \n"
 printf "Se instaló correctamente \n"
