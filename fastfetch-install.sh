@@ -14,7 +14,7 @@ cd fastfetch
 mkdir -p build
 cd build
 cmake ..
-cmake --build . --target fastfetch
+cmake --build . --target fastfetch -j$(nproc)
 
 cp -rv fastfetch /usr/bin
 cd /root
