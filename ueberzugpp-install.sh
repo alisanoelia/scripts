@@ -33,7 +33,7 @@ cd ueberzugpp
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release -DENABLE_OPENCV=OFF ..
-cmake --build .
+cmake --build . -j$(nproc)
 
 cp -rv ueberzug /usr/bin/
 cp -rv ueberzug /usr/bin/ueberzugpp
