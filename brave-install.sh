@@ -1,10 +1,10 @@
 #!/bin/sh -e
 
-VERSION="1.78.97"
+VERSION="1.80.115"
 
 if [ -d "$HOME/.brave" ]; then
-  sudo rm -rfv "$HOME/.brave"
-  printf "Se eliminará la carpeta...\n"
+	sudo rm -rfv "$HOME/.brave"
+	printf "Se eliminará la carpeta...\n"
 fi
 
 printf "Se instalará min-browser \n"
@@ -14,11 +14,11 @@ sudo xbps-install -y git wget xz curl
 
 # Verificar si la carpeta ya existe
 if [ -d "$HOME/.brave" ]; then
-  echo "La carpeta ya existe. Se saltará la creación."
+	echo "La carpeta ya existe. Se saltará la creación."
 else
-  # Crear la carpeta
-  mkdir "$HOME/.brave"
-  printf "La carpeta se ha creado correctamente.\n"
+	# Crear la carpeta
+	mkdir "$HOME/.brave"
+	printf "La carpeta se ha creado correctamente.\n"
 fi
 
 cd "$HOME/.brave" || exit
