@@ -1,10 +1,10 @@
 #!/bin/sh -e
 
-VERSION="1.35.0"
+VERSION="1.35.1"
 
 if [ -d "$HOME/.min" ]; then
-  sudo rm -rfv "$HOME/.min"
-  printf "Se eliminará la carpeta...\n"
+	sudo rm -rfv "$HOME/.min"
+	printf "Se eliminará la carpeta...\n"
 fi
 
 printf "Se instalará min-browser \n"
@@ -13,10 +13,10 @@ sleep 0.5
 sudo xbps-install -y git wget xz curl
 
 if [ -d "$HOME/.min" ]; then
-  printf "La carpeta ya existe. Se saltará la creación.\n"
+	printf "La carpeta ya existe. Se saltará la creación.\n"
 else
-  mkdir "$HOME/.min"
-  printf "La carpeta se ha creado correctamente.\n"
+	mkdir "$HOME/.min"
+	printf "La carpeta se ha creado correctamente.\n"
 fi
 
 cd "$HOME/.min" || exit
