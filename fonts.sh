@@ -32,6 +32,6 @@ fc-cache -f -v
 
 printf """
 -------------------------------
-+ se instalaron correctamente +
+| se instalaron correctamente |
 -------------------------------
 """
