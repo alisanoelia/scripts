@@ -8,6 +8,7 @@
 
 - Fastfetch
 - Ueberzugpp
+- Picom Animations
 
 ### Browsers
 
@@ -19,4 +20,3 @@
 - JetBrainsMono Nerd Font
 - MartianMono Nerd Font
 - GeistMono Nerd Font
-- Picom Animations
